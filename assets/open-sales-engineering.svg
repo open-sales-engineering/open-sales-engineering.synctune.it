@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Open Sales Engineering</title>
+  <desc>Forest-green [o] monogram on sunflower yellow.</desc>
+  <rect width="512" height="512" fill="#F2C94C"/>
+  <g fill="#21372D">
+    <path d="M160 128H96V384H160V352H128V160H160Z"/>
+    <path fill-rule="evenodd" d="M336 256A80 80 0 1 0 176 256A80 80 0 1 0 336 256ZM304 256A48 48 0 1 0 208 256A48 48 0 1 0 304 256Z"/>
+    <path d="M352 128H416V384H352V352H384V160H352Z"/>
+  </g>
+</svg>
