@@ -23,12 +23,37 @@ Python is only needed for this optional server, not for direct-file previews.
 Upload `index.html`, `styles.css`, and the entire `assets/` directory to any
 static host. Keep them together; `README.md` and `docs/` do not need to be
 published. All asset paths are relative, so hosting at a domain root or a
-subpath works without configuration. No hosting or GitHub repository
-visibility is changed by this site.
+subpath works without configuration.
 
 Open Field Engineer's repository is currently private. The page explicitly
 notes that its project and documentation links require GitHub access. Update
 that notice if the repository becomes public.
+
+### GitHub Pages
+
+The [Deploy static site workflow](../.github/workflows/pages.yml) packages
+`index.html`, `styles.css`, and all of `assets/`, including the font and artwork
+license notices. Pull requests check packaging without uploading or deploying.
+Changes to these files or the workflow on `main`, and manual runs on `main`,
+publish to GitHub Pages. No package install or compilation is needed.
+
+1. Ensure the organization's GitHub plan supports Pages for this private
+   repository. Published Pages content is normally public, even when its
+   source repository is private.
+2. In the repository's **Settings > Pages**, set **Source** to **GitHub Actions**.
+3. Set **Custom domain** to `open-sales-engineering.synctune.it` before changing
+   DNS. An Actions deployment uses this setting, not a repository `CNAME` file.
+4. Once the workflow is on `main`, open **Actions > Deploy static site > Run
+   workflow** and select `main`.
+5. At the DNS provider for `synctune.it`, create a CNAME record named
+   `open-sales-engineering` pointing to `open-sales-engineering.github.io`.
+   After DNS validation and certificate issuance, enable **Enforce HTTPS**.
+
+The workflow does not change repository visibility or configure DNS. See
+[GitHub Pages setup](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+and [custom domain configuration](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+Use only one production host for this hostname; do not point it to both Pages
+and another static host.
 
 ## Content and assets
 

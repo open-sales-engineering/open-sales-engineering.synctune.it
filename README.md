@@ -6,4 +6,6 @@ featuring [Open Field Engineer](https://github.com/open-sales-engineering/open-f
 Open [`index.html`](index.html) directly in a browser. No JavaScript, install, or
 build step is needed.
 
+GitHub Pages publishing uses the [Deploy static site workflow](.github/workflows/pages.yml).
+
 [Preview, publishing, and asset notices](docs/open-sales-engineering.md)
