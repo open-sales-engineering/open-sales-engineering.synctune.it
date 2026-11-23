@@ -67,6 +67,11 @@ The site bundles:
 - [`assets/open-sales-engineering.svg`](../assets/open-sales-engineering.svg)
   is the organization's font-independent monogram, used for the wordmark and
   favicon. It does not depend on a branding repository or an installed font.
+- [`assets/open-sales-engineering.png`](../assets/open-sales-engineering.png)
+  is the unmodified 512px `avatars/github-avatar.png` from the organization's
+  kit in [synctune-io/branding](https://github.com/synctune-io/branding)
+  (`brands/open-sales-engineering/`). It is the touch icon and the Open Graph
+  share image, since the kit has no separate social card.
 - [`assets/sunflower.svg`](../assets/sunflower.svg) is the project's original
   [`apps/web/public/sunflower.svg`](https://github.com/open-sales-engineering/open-field-engineer/blob/0fc596f375a2ae94ec806206b132f4513bbecbd8/apps/web/public/sunflower.svg).
 - [`assets/workbench.png`](../assets/workbench.png) is the original
