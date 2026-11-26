@@ -23,7 +23,8 @@ Python is only needed for this optional server, not for direct-file previews.
 Upload `index.html`, `styles.css`, and the entire `assets/` directory to any
 static host. Keep them together; `README.md` and `docs/` do not need to be
 published. All asset paths are relative, so hosting at a domain root or a
-subpath works without configuration.
+subpath works without configuration. The wordmark links to `./`, not
+`index.html`, so it lands on the clean root URL.
 
 Open Field Engineer's repository is currently private. The page explicitly
 notes that its project and documentation links require GitHub access. Update
